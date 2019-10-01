@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Imprima&display=swap');
+body {
+    background-image: url("fondo.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+    color: rgb(225, 235, 241);
+    margin-top: 40px;
+    margin-bottom: 90px;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: 'Imprima', sans-serif;
+}
+
+.logoPokemon {
+    width: 20%;
+}
+
+.content {
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.introText {
+    padding-bottom: 15px;
+}
+
+#order {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.eggImg {
+    width: 17%;
+    height: 17%;
+    margin-right: 15px;
+    outline: None;
+}
+
+.eggImg:active {
+    transform: translateY(4px);
+}
+
+.btn {
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid #7F8087;
+    padding: 15px 30px;
+    text-align: center;
+    font-family: 'Imprima', sans-serif;
+    font-weight: bold;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5CA3E0;
+}
+
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.pokemonCards {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    line-height: 1.6;
+    font-weight: bold;
+    column-gap: 40px;
+}
+
+.pokemonCard {
+    border: 2px solid #5CA3E0;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.withoutEgg {
+    cursor: pointer;
+}
+
+.withoutEgg:hover {
+    background-color: #5CA3E0;
+}
+
+.pokeImg {
+    width: 60%;
+}
+
+.back {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    border-radius: 30px;
+    opacity: 0.6;
+    padding: 15px;
+}
+
+.back:hover {
+    opacity: 1;
+    background-color: white;
+}
+
+@media (max-width: 500px) {
+    .logoPokemon {
+        width: 100%
+    }
+    .content {
+        font-size: 15px;
+    }
+    .btn {
+        padding: 10px 15px;
+    }
+    .eggImg {
+        width: 40%;
+        height: 40%;
+    }
+}
